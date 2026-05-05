@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Technical Background} 
+%may be changed into a Technical Background
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Architectural Framework}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.85\textwidth]{Three_tier_architecture.png}
+\caption{3-Tier System Architecture}
+\label{fig:system-architecture}
+\end{figure}
+
+This chapter details the various technologies and resources that will be utilized in the development of Aphelion. 
+The frontend, backend, database, framework, API, and other tools that are listed in this chapter were chosen after 
+careful consideration, to serve as the infrastructure for the project – with explanation of the technology and reasoning 
+regarding the advantages provided.
+
+The project will be using a three-tier architecture, which includes the presentation layer, application layer, and database layer. This architecture allows us to focus on a specific concern without affecting the other layers, and it makes it easily scalable. The presentation layer is the interface that the users interact with. It handles user input and the display of the application. The application layer handles the business logic, which processes the user inputs from the presentation layer. This layer bridges the communication between the presentation layer to the database layer. The application layer handles the business logic, which processes the user inputs from the presentation layer. This layer bridges the communication between the presentation layer to the database layer, The database layer manages and stores the data used by the application. 
+
+\section{Development Tools}
+
+\subsection{Github}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{github.png}
+\caption{Github Logo}
+\label{fig:github-logo}
+\end{figure}
+
+GitHub enables collaboration remotely for development as repositories are stored in the cloud. It also allows version control, which helps with debugging the application.
+
+\subsection{Lucidchart}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{lucidchart.png}
+\caption{Lucidchart Logo}
+\label{fig:lucidchart-logo}
+\end{figure}
+
+Lucidchart is used as a diagramming tool for visualizing theoretical system components such as the database and program flow.
+
+\section{Technologies Used}
+
+\subsection{React}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{react.png}
+\caption{React Logo}
+\label{fig:react-logo}
+\end{figure}
+
+React is a popular JavaScript-based frontend library with a notable focus on dynamic and responsive UI. It features reusable components which allows rapid construction of various interfaces, that of which the project heavily relies on, from the dialogue, text boxes, menus, minigames, and other forms of UI.
+
+\subsection{Tailwind CSS}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{tailwind.png}
+\caption{Tailwind CSS Logo}
+\label{fig:tailwind-logo}
+\end{figure}
+
+Tailwind CSS offers a sleek and modern styling template framework that is wholly compatible with React. Tailwind’s utility classes allow for rapid prototyping and construction of user interfaces. Additionally, the responsive design allows UI elements to gracefully adapt to differing web browsers and hardware.
+
+\subsection{PixiJS}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{pixijs.png}
+\caption{PixiJS Logo}
+\label{fig:pixijs-logo}
+\end{figure}
+
+PixiJS is a 2D WebGL render for web games. It handles sprite manipulation, animation, and interaction, which will be used for rendering the overall star map – the stars, planets, and other celestial bodies – in beautiful detail.
+
+\subsection{Django}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{django.png}
+\caption{Django Logo}
+\label{fig:django-logo}
+\end{figure}
+
+Django is a Python-based web backend framework that will be the premier server-side tool for Aphelion, due to its generous features. Notably, Django’s Object-Relational Mapper synergizes well with PostgreSQL, streamlining the complex relationships between data, such as the Stars, Sectors, User Progress, and Sector Progress. Additionally, security features are provided out of the box. Django protects the system from SQL injection, Cross-Site Scripting, and CSRF attacks by default. Despite being more complicated and having more overhead than Express.js, we believe that utilizing Django for the backend is the more beneficial choice.
+
+\subsection{PostgreSQL}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{postgresql.png}
+\caption{PostgreSQL Logo}
+\label{fig:postgresql-logo}
+\end{figure}
+
+PostgreSQL is an open-source relational database system, boasting robust and reliable performance. This database was chosen because of its integration with Django.
+
+\subsection{HYG Database}
+
+HYG Database is a compilation of 120,000 star data which will be used as the basis for accurate sector representation, ensuring a good educational value when students are engaging with the system.

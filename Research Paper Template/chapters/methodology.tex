@@ -1,0 +1,297 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Methodology}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The Aphelion project will be developed using the Agile methodology, under the Kanban framework. The Agile methodology was chosen because of its flexible and iterative process, which provides numerous benefits in efficiently managing development time.  By dividing the work needed to be done, we can prioritize the most pressing aspects of the project to develop, and have a clear idea of the progress being made. Additionally, Kanban was chosen as the Agile framework because of its continuous workload style. The swimlanes provide a clear visual representation of progress – enabling to see what modules of the project are being worked on, and what priorities must be managed.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{agile.png}
+\caption{Agile SDLC Model}
+\label{fig:agile-sdlc}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.15\textwidth]{kanban.png}
+\caption{Kanban Board}
+\label{fig:kanban-board}
+\end{figure}
+
+\section{Methodology Specification}
+
+\subsection{Product Backlog List}
+
+\textbf{User Story 1: Registration and Authentication}
+
+As a user, I want to create an account and log in to access the program.
+
+Functional Requirements:
+\begin{itemize}
+\item Account creation that requires a username, email, and password.
+\item Password recovery using email.  
+\item Login with a username and password.
+\item Account deletion.
+\end{itemize}
+
+\textbf{User Story 2: Tutorial}
+
+As a user, I want a short and simple tutorial that explains the game mechanics just enough for me to get a basic idea on what to do.
+
+Functional Requirements:
+\begin{itemize}
+\item A short tutorial that explains how to:
+\begin{itemize}
+\item Choose a sector.
+\item View stars on the star map.
+\item Participate in ongoing exploration missions.
+\item Complete minigames.
+\end{itemize}
+\end{itemize}
+
+\textbf{User Story 3: Sector Selection}
+
+As a user, I want to browse a list of servers that are exploring different star sectors, be able to see the progress of exploration for each sector, and to join the sector of my choosing.
+
+Functional Requirements:
+\begin{itemize}
+\item A list of servers that users can join.
+\item Shows the stars available and fully explored stars and number of users present.
+\end{itemize}
+
+\textbf{User Story 4: Star Exploration}
+
+As a user, I want to see the map of stars in the sector that I joined and to pick unlocked stars to play the minigames and help with the exploration effort.
+
+Functional Requirements:
+\begin{itemize}
+\item A star map that connects all the stars in a sector together.
+\item Each star in the map exists in the HYG Database.
+\item Star color and size are accurate to the corresponding database entry.
+\item Visual elements indicating if a star is unexplored, fully explored, or has an ongoing exploration mission.
+\end{itemize}
+
+\textbf{User Story 5: Minigames}
+
+As a user, I want to be presented with a random selection of minigames called “missions” to aid in the stellar exploration effort, with the minigames being thematic to astronomy and space exploration.
+
+Functional Requirements:
+\begin{itemize}
+\item A number of educational minigames based on astronomy concepts.
+\end{itemize}
+
+\textbf{User Story 6: Celestial Body Description}
+
+As a user, I want to view descriptions of the star being explored, as well as the planets orbiting it.
+
+Functional Requirements:
+\begin{itemize}
+\item Text descriptions for every celestial body in a star system.
+\end{itemize}
+
+\textbf{User Story 7: Levelling System}
+
+As a user, I want to accumulate experience points whenever I complete minigames for the exploration missions of a star, with rewards being unlocked as I level up.
+
+Functional Requirements:
+\begin{itemize}
+\item Level system for players based on minigames completed.
+\item Rewards for higher levels.
+\end{itemize}
+
+\textbf{User Story 8: Account Information and Statistics}
+
+As a user, I want to view my public account information such as my username and profile picture, as well as my private information such as my email. I also want to view my lifetime statistics for the game.
+
+Functional Requirements:
+\begin{itemize}
+\item Profile page with views for public and private information.
+\item The available information can be edited.
+\item The profile page has a separate view for user statistics.
+\end{itemize}
+
+\textbf{User Story 9: Achievements and Badges}
+
+As a user, I want to unlock achievements when I play the game in certain ways, and display them in my profile page as badges.
+
+Functional Requirements:
+\begin{itemize}
+\item Achievements that trigger during specific actions, example:
+\begin{itemize}
+\item Complete an exploration minigame for 5 days.
+\item Reach level 20.
+\item Be the first to start an exploration mission.
+\end{itemize}
+Badges that are acquired from achievements that can be displayed on the profile page.
+\end{itemize}
+
+\textbf{User Story 10: Gameplay Collaboration}
+
+As a user, I want to send friend requests to other users, and be able to invite them in ongoing exploration missions.
+
+Functional Requirements:
+\begin{itemize}
+\item An option to send friend requests to other users.
+\item A user can send invites to friends that will lead to the same sector and star that the sender is in.
+\end{itemize}
+
+\textbf{User Story 11: Admin Privileges}
+
+As a super user, I want to start star sectors and generate the stars based on proximity to create a coherent map. I also want to be able to edit descriptions of celestial bodies.
+
+Functional Requirements:
+\begin{itemize}
+\item Generate sectors that users can join in.
+\item Edit text descriptions for celestial bodies anytime.
+\end{itemize}
+
+Non-functional Requirements:
+\begin{itemize}
+\item Performance: Aphelion should run on weaker hardware without much difficulties, should have responsive buttons, and quick loading times – descriptions for celestial bodies must show near instantaneously.
+\item Reliability: Redundant servers must be present to ensure that users can continue playing through technical issues.
+\item Usability: The UI/UX must be simple and intuitive, requiring minimal tutorial to be usable.
+\item Scalability: Aphelion must have a robust system that can handle the stress from increasing players and active servers.
+\item Compliance on Regulations: Aphelion must abide by the law regarding user consent and privacy.
+\end{itemize}
+
+\subsection{Agile Workload Management}
+
+\textbf{Sprint Planning}
+
+Aphelion will be developed in spans of 1 week called “sprints”, according to the Agile methodology. During each sprint, one or more related tasks in the kanban will be moved into the “ongoing” swimlane and will be worked upon.
+
+\textbf{Daily Stand-up Meeting}
+
+Every day, the development team will communicate for no more than 5 minutes in order to give a short overview of tasks done, and the state of the project as a whole. Ideally, this meeting will be done face-to-face while standing up, emphasizing the namesake. Online meetings are also considered.
+
+\textbf{Backlog Review}
+
+At the end of a sprint, the development team will consider the next set of user stories to be completed for the following sprint.
+
+\section{Systems Analysis}
+
+\subsection{Application Modules}
+
+\textbf{Account Creation/Login}
+
+The account creation/login module facilitates the creation and deletion of user accounts, as well as verification during sessions. A button in the landing page prompts the user to login or sign up, with the latter requiring:
+
+\begin{itemize}
+\item Username - A maximum of 20 characters, no spaces.
+\item Email Address - Must be valid, and the user must verify the address.
+\item Password - A minimum length of 8 characters must be met, otherwise all types of password strength is allowed. A bar displaying the password strength is shown.
+\end{itemize}
+
+Once the user creates an account, they can login using the username and password.
+
+\textbf{Celestial Data Provider}
+
+This module communicates with the Nasa Exoplanet API and HYG Database and loads the relevant, scientifically accurate data when generating sectors.
+
+\textbf{Star Map}
+
+The star map module serves as the visual representation of a sector. A facilitator generates the sector, which automatically picks the collection of stars based on relative range. Students can then join sectors and participate in exploration missions.
+
+\textbf{Missions}
+
+The mission module handles the selection of minigames that the user will play to complete the exploration effort for a star. It tracks the mission details and progress, and rewards players with badges upon completion.
+
+\textbf{Profile}
+
+The profile module is connected to an account, and updates accordingly as the user interacts with the program.
+
+\section{System Design}
+
+\subsection{Use Case Diagram}
+
+\includegraphics[width=0.95\textwidth]{Use_Case.png}
+\begin{figure}[h!]
+\centering
+\caption{Use Case Diagram}
+\label{fig:use-case}
+\end{figure}
+
+\FloatBarrier
+\subsection{Context Diagram}
+
+\includegraphics[width=0.95\textwidth]{Context_Diagram.png}
+\begin{figure}[h!]
+\centering
+\caption{Context Diagram}
+\label{fig:context-diagram}
+\end{figure}
+
+\FloatBarrier
+\subsection{Data Flow Diagram}
+
+\includegraphics[width=0.95\textwidth]{Data_Flow_Diagram.png}
+\begin{figure}[h!]
+\centering
+\caption{Data Flow Diagram}
+\label{fig:data-flow-diagram}
+\end{figure}
+
+\FloatBarrier
+\subsection{Level 2 Data Flow Diagram}
+
+\includegraphics[width=0.95\textwidth]{Module_1.png}
+\begin{figure}[h!]
+\centering
+\caption{Module 1}
+\label{fig:module-1}
+\end{figure}
+
+\includegraphics[width=0.95\textwidth]{Module_2.png}
+\begin{figure}[h!]
+\centering
+\caption{Module 2}
+\label{fig:module-2}
+\end{figure}
+
+\includegraphics[width=0.95\textwidth]{Module_3.png}
+\begin{figure}[h!]
+\centering
+\caption{Module 3}
+\label{fig:module-3}
+\end{figure}
+
+\includegraphics[width=0.95\textwidth]{Module_4.png}
+\begin{figure}[h!]
+\centering
+\caption{Module 4}
+\label{fig:module-4}
+\end{figure}
+
+\includegraphics[width=0.95\textwidth]{Module_5.png}
+\begin{figure}[h!]
+\centering
+\caption{Module 5}
+\label{fig:module-5}
+\end{figure}
+
+\FloatBarrier
+\subsection{Process Flow Diagram}
+
+\includegraphics[width=0.95\textwidth]{Process_Flow_ Login.png}
+\begin{figure}[h!]
+\centering
+\caption{Process Flow Diagram}
+\label{fig:process-flow-login}
+\end{figure}
+
+\includegraphics[width=0.95\textwidth]{Activity.png}
+\begin{figure}[h!]
+\centering
+\caption{Activity Diagram}
+\label{fig:process-flow-diagram}
+\end{figure}
+
+\FloatBarrier
+\subsection{Entity Relationship Diagram}
+
+\includegraphics[width=0.95\textwidth]{ERD.png}
+\begin{figure}[h!]
+\centering
+\caption{Entity Relationship Diagram}
+\label{fig:erd}
+\end{figure}
